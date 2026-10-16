@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Avisos Institucionales</h2>
+<hr>
+{% for aviso in avisos %}
+    <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+            <h4 class="card-title text-primary">{{ aviso.titulo }}</h4>
+            <h6 class="text-muted">Publicado el: {{ aviso.fecha.strftime('%d/%m/%Y %H:%M') }}</h6>
+            <p class="card-text mt-2">{{ aviso.contenido }}</p>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}

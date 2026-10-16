@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Manual de Uso del Sistema</h2>
+<hr>
+<div class="accordion" id="accordionManual">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+        1. ¿Cómo publicar un aviso?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show">
+      <div class="accordion-body">
+        Diríjase a la sección "Publicar Aviso", complete el título y contenido. Al hacer clic en publicar, el sistema almacenará el aviso y simulará el envío masivo vía WhatsApp a los padres de familia.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+        2. ¿Cómo registrar la asistencia?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        Ingrese a la sección "Asistencia", seleccione la fecha actual y desmarque la casilla de los alumnos que hayan faltado. Al guardar, el sistema enviará de forma automática la alerta de inasistencia al tutor correspondiente.
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
